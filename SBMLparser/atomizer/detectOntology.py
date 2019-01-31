@@ -14,12 +14,12 @@ from os import listdir
 from os.path import isfile, join
 import numpy as np
 try:
-    from utils.util import pmemoize as memoize
+    from SBMLparser.utils.util import pmemoize as memoize
     import libsbml
 except ModuleNotFoundError:
     import sys
     sys.path.append('..')
-    from utils.util import pmemoize as memoize
+    from SBMLparser.utils.util import pmemoize as memoize
     import libsbml
 
 @memoize

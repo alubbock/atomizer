@@ -9,23 +9,24 @@ Created on Fri Mar  1 16:14:42 2013
 from collections import OrderedDict
 import time
 import libsbml
-import writer.bnglWriter as writer
+import SBMLparser.writer.bnglWriter as writer
 from optparse import OptionParser
-import atomizer.moleculeCreation as mc
+import SBMLparser.atomizer.moleculeCreation as mc
 import sys
 from os import listdir
 import re
 import pickle
 log = {'species': [], 'reactions': []}
 from collections import Counter, namedtuple
+import pkg_resources
 
-import utils.structures as structures
-from utils.util import logMess, setupLog, setupStreamLog, finishStreamLog, TranslationException
-from utils import consoleCommands
-from sbml2bngl import SBML2BNGL
+import SBMLparser.utils.structures as structures
+from SBMLparser.utils.util import logMess, setupLog, setupStreamLog, finishStreamLog, TranslationException
+from SBMLparser.utils import consoleCommands
+from SBMLparser.sbml2bngl import SBML2BNGL
 #from biogrid import loadBioGridDict as loadBioGrid
 import logging
-from rulifier import postAnalysis
+from SBMLparser.rulifier import postAnalysis
 import pprint
 import fnmatch
 from collections import defaultdict
@@ -102,9 +103,9 @@ def selectReactionDefinitions(bioNumber):
     '''
     #with open('stats4.npy') as f:
     #    db = pickle.load(f)
-    fileName = resource_path('config/reactionDefinitions.json')
+    fileName = pkg_resources.resource_stream(__name__, 'config/reactionDefinitions.json')
     useID = True
-    naming = resource_path('config/namingConventions.json')
+    naming = pkg_resources.resource_stream(__name__, 'config/namingConventions.json')
     '''
     for element in db:
         if element[0] == bioNumber and element[1] != '0':

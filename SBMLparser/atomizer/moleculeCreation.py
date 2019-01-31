@@ -13,12 +13,12 @@ Created on Tue Dec  6 17:42:31 2011
 """
 from copy import deepcopy, copy
 from . import analyzeSBML
-import utils.structures as st
-from utils.util import logMess
+import SBMLparser.utils.structures as st
+from SBMLparser.utils.util import logMess
 #import biogrid
 import marshal
 import functools
-import utils.pathwaycommons as pwcm
+import SBMLparser.utils.pathwaycommons as pwcm
 from collections import Counter, defaultdict
 import itertools
 from .atomizerUtils import BindingException

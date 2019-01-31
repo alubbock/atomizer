@@ -4,7 +4,7 @@ import pprint
 from collections import defaultdict
 import itertools
 from copy import copy
-from utils import readBNGXML
+from SBMLparser.utils import readBNGXML
 
 import functools
 import marshal

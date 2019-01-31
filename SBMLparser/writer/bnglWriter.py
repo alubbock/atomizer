@@ -7,7 +7,7 @@
 
 import re
 from copy import deepcopy
-from utils.util import logMess
+from SBMLparser.utils.util import logMess
 import string
 from pyparsing import commaSeparatedList as csl
 import pyparsing

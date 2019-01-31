@@ -5,13 +5,13 @@ Created on Tue Dec  6 17:42:31 2011
 @author: proto
 """
 from copy import deepcopy, copy
-from writer import bnglWriter as writer
+from SBMLparser.writer import bnglWriter as writer
 log = {'species': [], 'reactions': []}
 import re
 from collections import Counter
 from collections import defaultdict
 import math as pymath
-from utils.util import logMess, TranslationException
+from SBMLparser.utils.util import logMess, TranslationException
 import libsbml
 
 def factorial(x):

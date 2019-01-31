@@ -1,0 +1,2 @@
+include SBMLparser/config/namingConventions.json
+include SBMLparser/config/reactionDefinitions.json

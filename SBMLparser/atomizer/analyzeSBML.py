@@ -9,18 +9,18 @@ from pyparsing import Word, Suppress,Optional,alphanums,Group,ZeroOrMore
 import numpy as np
 import json
 import itertools
-import utils.structures as st
+import SBMLparser.utils.structures as st
 from copy import deepcopy,copy
 from . import detectOntology
 import re
 import difflib
-from utils.util import logMess
+from SBMLparser.utils.util import logMess
 from collections import defaultdict
 import itertools
 import math
 from collections import Counter
 import re
-from utils.util import pmemoize as memoize
+from SBMLparser.utils.util import pmemoize as memoize
 
 '''
 This file in general classifies rules according to the information contained in

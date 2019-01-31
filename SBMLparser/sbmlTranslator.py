@@ -5,7 +5,7 @@ Created on Tue May 21 12:38:21 2013
 @author: proto
 """
 
-import libsbml2bngl as ls2b
+import SBMLparser.libsbml2bngl as ls2b
 import argparse
 import yaml
 

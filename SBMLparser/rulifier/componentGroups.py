@@ -1,9 +1,9 @@
-from utils import readBNGXML
+from SBMLparser.utils import readBNGXML
 import argparse
 from collections import defaultdict
 # from cStringIO import StringIO
 from io import StringIO
-from utils import extractAtomic
+from SBMLparser.utils import extractAtomic
 from copy import deepcopy
 import networkx as nx
 

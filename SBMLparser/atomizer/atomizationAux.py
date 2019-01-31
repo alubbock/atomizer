@@ -1,5 +1,5 @@
 from pyparsing import Word, Suppress, Optional, alphanums, Group, ZeroOrMore
-from utils.util import pmemoize as memoize
+from SBMLparser.utils.util import pmemoize as memoize
 
 class CycleError(Exception):
 

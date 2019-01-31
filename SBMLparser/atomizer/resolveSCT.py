@@ -4,9 +4,9 @@ from . import analyzeSBML
 from collections import Counter, defaultdict
 import itertools
 from copy import deepcopy, copy
-from utils.util import logMess, memoize
+from SBMLparser.utils.util import logMess, memoize
 from . import atomizationAux as atoAux
-import utils.pathwaycommons as pwcm
+import SBMLparser.utils.pathwaycommons as pwcm
 
 
 
